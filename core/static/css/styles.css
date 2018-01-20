@@ -1,0 +1,69 @@
+#head-container a{
+  color: #fff;
+}
+#head-container a:hover {
+  text-decoration: none;
+  color: #BFBFBF;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    color: #fff;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    background-color: #333;
+}
+h5 {
+    color: #333;
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+}
+.jumbotron {
+    padding-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    background-color: #f5d76e;
+    color: #333;
+}
+.blockquote-footer {
+    color: #333;
+}
+#offerings a{
+    color: #f5d76e;
+}
+.card{
+  text-shadow: none;
+}
+.card-header, .card-footer{
+    background-color: #333;
+    color: #f5d76e;
+}
+.card-body{
+    color: #333;
+    background-color: #f5d76e;
+}
+#footer a{
+    color: #6C7A89;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px; /* Set the fixed height of the footer here */
+    line-height: 40px; /* Vertically center the text there */
+}
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

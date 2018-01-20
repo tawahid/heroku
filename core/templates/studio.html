@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title%}<title>TAW - Studio</title>{%endblock%}
+
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="col-lg-12 text-center container">
+          <strong><p>Graphic design | Logo Design | Marketing Materials | Infographics | Motion Graphics | Video Editing | Invitations | Corporate Videos| E-learning Modules | Business Presentations  |</p></strong>
+          <strong><p>Adobe Photoshop | Adobe Illustrator | Adobe After Effects | Adobe Captivate | Adobe Indesign </p></strong>
+          <br><br>
+          <h5><strong>Here are some of my works in display!</strong></h5>
+      	</div>
+	  </div>
+
+
+<br><br>
+<div class="container">
+    {% for item in items %}
+    <div class="row">
+        <h3>{{item.title}}</h3>
+    </div>
+    <div class="row">
+        <div class="col">
+            <br>
+            <div class="video-responsive">
+                <iframe src="{{item.link}}\?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col">
+            <br><p align="justify">{{item.description}}</p>
+        </div>
+    </div>
+    <br>
+    {%  endfor %}
+</div>
+
+
+
+{% endblock %}
